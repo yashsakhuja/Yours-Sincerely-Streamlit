@@ -1,6 +1,6 @@
 streamlit
-pandas
+pandas==1.3.2
 altair
-matplotlib
+matplotlib==3.5.2
 pyplot
-plotly
+plotly==5.8.2
