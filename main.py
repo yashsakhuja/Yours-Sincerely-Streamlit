@@ -8,6 +8,7 @@ import pandas as pd
 
 import altair as alt
 from matplotlib import pyplot as plt
+import plotly.express as px
 
 # st.set_page_config(layout='wide')
 
@@ -148,7 +149,6 @@ st.subheader('3.5- Plotting with Plotly Express')
 st.echo()
 with st.echo():
     
-    import plotly.express as px
     # Scatter plot using Plotly Express
     fig = px.scatter(
         sales_data, x='Sales', y='Profit', color='Segment',
