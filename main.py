@@ -131,6 +131,7 @@ with st.echo():
 
 st.divider()
 st.subheader('3.4- Plotting the Maps')
+
 st.echo()
 with st.echo():
 
@@ -143,10 +144,11 @@ with st.echo():
 
 st.divider()
 st.subheader('3.5- Plotting with Plotly Express')
+
 st.echo()
 with st.echo():
+    
     import plotly.express as px
-
     # Scatter plot using Plotly Express
     fig = px.scatter(
         sales_data, x='Sales', y='Profit', color='Segment',
