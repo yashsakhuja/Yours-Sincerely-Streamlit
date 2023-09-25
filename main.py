@@ -129,6 +129,22 @@ with st.echo():
     # Create a Streamlit line chart for multiple years
     st.line_chart(pivot_sales)
 
+st.divider()
+st.subheader('3.4- Plotting the Maps')
+st.echo()
+with st.echo():
+
+    travel_data = pd.read_csv("./data/PortsmouthPlaces.csv")
+    st.dataframe(travel_data)
+
+    # There is more room to play with packages like folium, mapbox and many others.
+    st.map(data=travel_data)
+
+
+st.divider()
+st.subheader('3.5- Plotting with Plotly Express')
+st.echo()
+with st.echo():
     import plotly.express as px
 
     # Scatter plot using Plotly Express
@@ -141,17 +157,6 @@ with st.echo():
 
     # Display the chart in the Streamlit app
     st.plotly_chart(fig)
-
-st.divider()
-st.subheader('3.4- Plotting the Maps')
-st.echo()
-with st.echo():
-
-    travel_data = pd.read_csv("./data/PortsmouthPlaces.csv")
-    st.dataframe(travel_data)
-
-    # There is more room to play with packages like folium, mapbox and many others.
-    st.map(data=travel_data)
 
 st.divider()
 st.subheader('4. Streamlit Interactivity')
